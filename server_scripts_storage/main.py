@@ -60,9 +60,19 @@ async def execute_command():
     await asyncio.sleep(5)
 
 
+@app.get("/hello_world")
+async def execute_command():
+    return ['Hello world']
+
+
+@app.get("/Zakhar_info")
+async def execute_command(surname: str):
+    return {'name': f'Zikhar {surname}'}
+
+
 if __name__ == '__main__':
     import uvicorn
     uvicorn.run(
-        "DevApi:app",
+        "main:app",
         reload=True
     )
