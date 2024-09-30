@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "server-scripts-storage"
+version = "0.1.0"
+description = ""
+authors = ["Igor Belov <i_belov@wargaming.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
